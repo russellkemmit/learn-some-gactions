@@ -4,12 +4,12 @@ on: workflow_dispatch
 jobs:
   # This job title can be anything
   first-job:
-  # Linux envs are currently limited to Ubuntu
-  runs-on: ubuntu-latest
-  # Here our steps, I be
-  steps:
-    - name: Print greeting
-      run: echo "hello world"
-    - name: Print goodbye
-      run: echo "buh bye"
-    
+    # Linux envs are currently limited to Ubuntu
+    runs-on: ubuntu-latest
+    # Here our steps, I be
+    steps:
+      - name: Print greeting
+        run: echo "hello world"
+      - name: Print goodbye
+        run: echo "buh bye"
+      
