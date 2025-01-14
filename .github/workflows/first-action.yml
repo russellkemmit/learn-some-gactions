@@ -1,19 +1,9 @@
 name: First Workflow
-# This will allow use to trigger a workflow manually, we can update this to be on commit, push, merge, etc.
 on: workflow_dispatch
 jobs:
-  # This job title can be anything
-  first-job:
-    # Linux envs are currently limited to Ubuntu
+  info:
     runs-on: ubuntu-latest
-    # Here our steps, I be
     steps:
       - name: Print greeting
-        run: echo "hello world"
-      - name: work
-        run: |
-            echo "Working..."
-            echo "Doing some more work...."
-      - name: Print goodbye
-        run: echo "buh bye"
+        run: echo "${{ toJSON(github) }}"
       
